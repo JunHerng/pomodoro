@@ -23,9 +23,9 @@ start = datetime.now()
 # 8-9-10-11-12-13-14-15
 # 8 cycle - odd = rest, even = work
 pom_counter = 0
-pom_work = 0.17 # mins
-pom_rest_short = 0.17 # mins
-pom_rest_long = 0.35 # mins
+pom_work = 25 # mins
+pom_rest_short = 5 # mins
+pom_rest_long = 5 # mins
 
 toast.show_toast("Pomodoro - {}".format(pom_counter), "Pomodoro started!\nWORK for {} minutes".format(pom_work))
 
