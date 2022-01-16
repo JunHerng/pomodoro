@@ -23,7 +23,7 @@ start = datetime.now()
 # 8-9-10-11-12-13-14-15
 # 8 cycle - odd = rest, even = work
 pom_counter = 0
-pom_work = 0.17 # mins
+pom_work = 5 # mins
 pom_rest_short = 0.17 # mins
 pom_rest_long = 0.35 # mins
 
@@ -32,7 +32,7 @@ toast.show_toast("Pomodoro - {}".format(pom_counter), "Pomodoro started!\nWORK f
 while True:
     now = datetime.now()
     delta = now.timestamp() - start.timestamp()
-    print(delta)
+    print(delta, end="\r")
     if pom_counter%2: # Odd - rest
         time_period = pom_rest_short * 60
         if not pom_counter%7: # Long break every 4th pomodoro
